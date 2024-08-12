@@ -7,6 +7,8 @@ a{
     text-decoration: none;
     color: black;
 }
+
+/* Navigaton Bar */
 .nav-bar{
     /* position: fixed; */
     width: 100%;
@@ -19,7 +21,6 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center ;
-    padding: 0 15px;
 }
 .web-config {
     display: flex;
@@ -27,8 +28,9 @@ a{
     align-items: center;
 }
 .web-config div{
-    margin:0 20px ;
+    margin-right: 20px ;
     display: flex;
+    justify-content: start;
     align-items: center;
 }
 .location img{
@@ -50,14 +52,13 @@ a{
 .lower-nav{
     width: 100%;
     max-width: 516px;
-    margin: 5px auto;
+    margin: 5px auto 30px;
     padding: 0 10px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
-    
+    gap: 40px;  
 }
 .lower-nav a{
     font-size: 1em;
@@ -68,15 +69,55 @@ a{
     display: none;
 }
 
+
+/*Main content of web page  */
+
+.web-content{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+}
+.web-heading-left{
+    width: 100%;
+    max-width: 527px;
+}
+.web-heading-left h1{
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 80px;
+}
+.blueText{
+    color: #0071B4;
+}
+.web-heading-left p{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33px;
+}
+.web-heading-right{
+    width: 40%;
+    height: 558px;
+    background-color: black;
+}
+
 @media screen and (max-width:600px) {
+    
+    /* Navigaton Bar */
     .burgerMenu{
         display: block;
     }
     .lower-nav{
         display: none;
     }
-
     .nav-icon, .web-config{
         display: none;
     }
+
+
+    /* Main content of web page */
+
 }
