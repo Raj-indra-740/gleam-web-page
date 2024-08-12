@@ -3,7 +3,80 @@
     margin: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-bar{
+    /* position: fixed; */
+    width: 100%;
+    background-color: white;
+}
+.upper-nav{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 0 15px;
+}
+.web-config {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.web-config div{
+    margin:0 20px ;
+    display: flex;
+    align-items: center;
+}
+.location img{
+    width: 21px;
+}
+#arrowDown {
+    margin-left: 4px;
+    width: 12px;
+}
+.nav-icon{
+    width: 100%;
+    max-width: 231px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-icon img{
+    width: 24px;
+}
+.lower-nav{
+    width: 100%;
+    max-width: 516px;
+    margin: 5px auto;
+    padding: 0 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    
+}
+.lower-nav a{
+    font-size: 1em;
+    font-weight: 450;
+    color: #373A36;
+}
+.burgerMenu{
+    display: none;
+}
 
-h1{
-    color: aqua;
+@media screen and (max-width:600px) {
+    .burgerMenu{
+        display: block;
+    }
+    .lower-nav{
+        display: none;
+    }
+
+    .nav-icon, .web-config{
+        display: none;
+    }
 }
