@@ -3,6 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --heading-font-color: #373A36;
+    --decription-font-color: #0071B4;
+    --decription-font-size: 16px;
+    --heading-font-size: 56px;
+}
 a{
     text-decoration: none;
     color: black;
@@ -66,7 +72,7 @@ body{
 .lower-nav a{
     font-size: 1em;
     font-weight: 450;
-    color: #373A36;
+    color: var(--heading-font-color);
 }
 .burgerMenu{
     margin-right: 20px;
@@ -98,7 +104,7 @@ body{
     top: -10px;
 }
 .web-heading-left h1{
-    color:#373A36;
+    color:var(--heading-font-color);
     font-size: 65px;
     font-weight: 400;
     line-height: 80px;
@@ -148,13 +154,127 @@ body{
     top: 20px;
 }
 
+/* Working Steps Seaction  */
+.working-steps-seaction{
+    width: 100%;
+    background-color: #F0F7FB;
+}
 .working-steps{
-    background-color: #0072b496;
+    width: 100%;
     margin: 0 auto;
     padding: 80px 0;
+    display: flex;
+    flex-direction: column ;
 }
+.working-steps-glow-effect{
+    display: none;
+}
+.working-steps-heading{
+    width: 100%;
+    max-width: 710px;
+    margin: 0 auto 69px;
+    text-align: center;
+}
+.working-steps-heading h2{
+    color: var(--heading-font-color);
+    font-size: var(--heading-font-size);
+    font-weight: 100;
+}
+.working-steps-heading p{
+    padding: 16px 10px;
+    font-size: var(--decription-font-size);
+    font-weight: 450;
+    line-height: 25px;
+}
+
+.working-steps-description{
+    width: 100%;
+}
+
+.row-one, .row-two{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 127px;
+}
+.row-two{
+    flex-direction: row-reverse;
+}
+.step-1, .step-2, .step-3, .step-4, .step-5, .step-6{
+    position: relative;
+    z-index: 4;
+}
+.stepCard img[alt='arrows']{
+    position: absolute;
+    width: 285px;
+    height: 114px;
+}
+.step-1 img[alt='arrows']{
+    right: -240px;
+    top: 0;
+    z-index: -1;
+}
+.step-2 img[alt='arrows']{
+    right: -250px;
+    top: 70px;
+    z-index: -1;
+}
+.step-3 img[alt='arrows']{
+    width: 129px;
+    height: 469px;
+    right: -76px;
+    top: 95px;
+    z-index: -1;
+}
+.step-4 img[alt='arrows']{
+    left: -240px;
+    top: 10px;
+    z-index: -1;
+}
+.step-5 img[alt='arrows']{
+    left: -240px;
+    top: 85px;
+    z-index: -1;
+}
+.step-6 img[alt='arrows']{
+    right: -240px;
+    top: 0;
+    z-index: -1;
+}
+.stepCard{
+    margin: 10px;
+    width: 30%;
+    max-width: 329px;
+    height: 360px;
+    text-align: center;
+}
+.stepCard:nth-child(odd){
+    margin-top: 149px;
+}
+.stepCard img{
+    width: 100%;
+    max-width: 329px;
+    margin-bottom: 20px;
+}
+.stepCard h3{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.stepCard p{
+    color: var(--heading-font-color);
+    font-size: var(--decription-font-size);
+    line-height: 20px;
+
+}
+
 @media screen and (max-width:600px) {
-    
+    :root{
+        --decription-font-size: 16px;
+        --heading-font-size: 32px;
+    }
     /* Navigaton Bar */
     /* .nav-bar{
         position: sticky;
@@ -164,6 +284,7 @@ body{
      .nav-bar{
        position: fixed;
        top: 0;
+       z-index: 5;
      }
     .upper-nav .logo img{
         margin: 15px 16px;
@@ -183,6 +304,7 @@ body{
     /* Main content of web page */
     .web-content{
         margin-top: 60px;
+        padding-bottom: 47px;
         flex-direction: column;
         gap: 30px;
         justify-content: center;
@@ -239,7 +361,43 @@ body{
         top: 10px;
     }
 
-
+    /* Working Steps Seaction */
+    .working-steps{
+        position: relative;
+        padding: 10px;
+    }
+    .working-steps-glow-effect{
+        display: block;
+        position: absolute;
+    }
+    .working-steps-heading{
+        margin-bottom: 19px;
+        text-align: center;
+    }
+    .working-steps-heading p{
+        padding: 8px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .row-one, .row-two{
+        flex-direction: column;
+        align-items: center;
+    }
+    .stepCard{
+        width: 100%;
+    }
+    .stepCard:nth-child(odd){
+        margin-top: 0;
+    }
+    .stepCard img[alt='arrows']{
+        display: none;
+    }
+    .row-one, .row-two{
+        gap: 32px;
+    }
+    .row-two{
+        padding-top: 72px;
+    }
 }
 
 
