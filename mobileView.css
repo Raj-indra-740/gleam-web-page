@@ -142,7 +142,8 @@
 
 /* Category seaction */
 .categories {
-  padding: 0;
+
+  padding: 0 0 40px;
   gap: 12px;
 }
 .category-heading {
@@ -155,4 +156,17 @@
 }
 .category-cards h3 {
   font-size: 16px;
+}
+
+/* why choose section */
+.why-choose-heading{
+    padding-top: 40px;
+    margin-bottom: 14px;
+  }
+.why-choose-cards{
+    /* flex-direction: column; */
+    padding: 10px 10px 40px;
+}
+.why-choose-card{
+    margin-bottom: 10px;
 }
