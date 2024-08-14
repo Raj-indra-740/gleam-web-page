@@ -91,10 +91,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 10%;
   /* background-color: aqua; */
 }
 .web-heading-left {
-  width: 100%;
+  width: 50%;
   max-width: 527px;
 }
 .web-heading-left .glow {
@@ -122,12 +123,14 @@ body {
   padding-right: 10px;
 }
 .web-heading-right {
+  width:fit-content;
   margin-top: 40px;
-  margin-right: 30px;
   position: relative;
 }
 .web-heading-right .main-img {
+  display: inline-block;
   max-width: 100%;
+  margin: 0 auto;
   z-index: 3;
 }
 .hero-img-vector {
@@ -170,7 +173,6 @@ body {
 .working-steps {
   width: 100%;
   margin: 0 auto;
-  padding: 80px 0;
   display: flex;
   flex-direction: column;
 }
@@ -183,7 +185,11 @@ body {
   margin: 0 auto 69px;
   text-align: center;
 }
+.working-steps-heading{
+  position: relative;
+}
 .working-steps-heading h2 {
+  padding: 50px;
   color: var(--heading-font-color);
   font-size: var(--heading-font-size);
   font-weight: 100;
@@ -201,9 +207,9 @@ body {
 
 .row-one,
 .row-two {
+  width: 100%;
   position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 127px;
 }
@@ -356,223 +362,4 @@ body {
     background-size: cover;
 }
 
-@media screen and (max-width: 1440px) {
-    .container{
-        padding: 0 50px;
-    }
-    .nav-bar{
-        padding: 0 50px;
-    }
-    .web-heading-left h1{
-        font-size: 52px;
-    }
-}
-@media screen and (max-width: 1024px) {
-    .working-steps-seaction{
-        display: none;
-    }
-    /* .web-heading-left h1{
-        font-size: 46px;
-    } */
-    .web-config {
-        display: none;
-    }
-    .web-heading-left h1 {
-        max-width: 520px;
-        font-size: 42px;
-        line-height: 52px;
-      }
-      .web-heading-left p {
-        font-size: 16px;
-        line-height: 42px;
-        line-height: 18px;
-      }
-    .web-heading-right {
-        margin-top: 0;
-        margin-right: 0;
-      }
-      .web-heading-right .main-img {
-        width: 311px;
-      }
-      .heroImg-1 {
-        width: 110px;
-        left: 41px;
-        top: 20px;
-        z-index: -1;
-      }
-      .heroImg-2 {
-        width: 110px;
-        right: 0px;
-        bottom: 25px;
-        z-index: -1;
-      }
-      .dots-1 {
-        width: 115px;
-        height: 40px;
-        left: -56px;
-        bottom: 50px;
-      }
-      .dots-2 {
-        width: 115px;
-        height: 40px;
-        right: -30px;
-        top: 10px;
-      }
-    
-}
-@media screen and (max-width: 600px) {
-  :root {
-    --decription-font-size: 16px;
-    --heading-font-size: 32px;
-  }
-  .working-steps-seaction{
-    display: block;
-    }
-  /* Navigaton Bar */
-  /* .nav-bar{
-        position: sticky;
-        top: 0;
-        z-index: 10;
-    } */
-  .container{
-    padding: 0 5px;
-  }
-  .nav-bar {
-    position: fixed;
-    padding: 0;
-    top: 0;
-    z-index: 5;
-  }
-  .upper-nav .logo img {
-    margin: 15px 16px;
-    width: 73px;
-  }
-  .burgerMenu {
-    display: block;
-  }
-  .lower-nav {
-    display: none;
-  }
-  .nav-icon,
-  .web-config {
-    display: none;
-  }
 
-  /* Main content of web page */
-  .web-content {
-    margin-top: 60px;
-    padding-bottom: 47px;
-    flex-direction: column;
-    gap: 30px;
-    justify-content: center;
-  }
-  .web-heading-left {
-    text-align: center;
-  }
-  .web-heading-left .glow {
-    width: 250px;
-    left: 0px;
-    top: -5px;
-  }
-  .web-heading-left h1 {
-    max-width: 320px;
-    font-size: 32px;
-    line-height: 42px;
-    margin: 40px auto 16px;
-  }
-  .web-heading-left p {
-    font-size: 16px;
-    line-height: 42px;
-    line-height: 18px;
-    padding: 0 25px;
-  }
-  .web-heading-right {
-    margin-top: 0;
-    margin-right: 0;
-  }
-  .web-heading-right .main-img {
-    width: 311px;
-  }
-  .heroImg-1 {
-    width: 110px;
-    left: 41px;
-    top: 20px;
-    z-index: -1;
-  }
-  .heroImg-2 {
-    width: 110px;
-    right: 0px;
-    bottom: 25px;
-    z-index: -1;
-  }
-  .dots-1 {
-    width: 115px;
-    height: 40px;
-    left: -56px;
-    bottom: 50px;
-  }
-  .dots-2 {
-    width: 115px;
-    height: 40px;
-    right: -30px;
-    top: 10px;
-  }
-
-  /* Working Steps Seaction */
-  .working-steps {
-    position: relative;
-    padding: 10px;
-  }
-  .working-steps-glow-effect {
-    display: block;
-    max-width: 300px;
-    position: absolute;
-  }
-  .working-steps-heading{
-    margin-bottom: 19px;
-    text-align: center;
-  }
-  .working-steps-heading p {
-    padding: 8px;
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .row-one,
-  .row-two {
-    flex-direction: column;
-    align-items: center;
-  }
-  .stepCard {
-    width: 100%;
-  }
-  .stepCard:nth-child(odd) {
-    margin-top: 0;
-  }
-  .stepCard img[alt="arrows"] {
-    display: none;
-  }
-  .row-one,
-  .row-two {
-    gap: 32px;
-  }
-  .row-two {
-    padding-top: 72px;
-  }
-
-  /* Category seaction */
-  .categories{
-    padding: 0;
-    gap: 12px;
-  }
-  .category-heading{
-    padding: 40px 16px 0;
-    margin-bottom: 19px;
-  }
-  .category-cards{
-    width: 166px;
-    height: 166px;
-  }
-  .category-cards h3{
-    font-size: 16px;
-  }
-}
