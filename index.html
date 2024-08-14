@@ -1,327 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
-      integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" type="text/css" href="mystyle.css" />
-    <link rel="stylesheet" media="screen and (max-width: 1440px)" href="laptopView.css" />
-    <link rel="stylesheet" media="screen and (max-width: 1024px)" href="tabView.css" />
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobileView.css" />
-    <title>Demo page</title>
-  </head>
 
-  <body>
-    <!-- Navigaton Bar -->
-    <nav class="nav-bar">
-      <div class="upper-nav">
-        <div class="web-config">
-          <div class="lang">
-            <span>English</span>
-            <img
-              id="arrowDown"
-              src="assets/icons/arrowDown.png"
-              alt="arrowDown"
-            />
-          </div>
-          <div class="location">
-            <img src="assets/icons/locationIcon.png" alt="locationIcon" />
-            <span> Mataró, Barcelona </span>
-            <img
-              id="arrowDown"
-              src="assets/icons/arrowDown.png"
-              alt="arrowDown"
-            />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css"
+    integrity="sha512-B46MVOJpI6RBsdcU307elYeStF2JKT87SsHZfRSkjVi4/iZ3912zXi45X5/CBr/GbCyLx6M1GQtTKYRd52Jxgw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="mystyle.css" />
+  <link rel="stylesheet" media="screen and (max-width: 1440px)" href="laptopView.css" />
+  <link rel="stylesheet" media="screen and (max-width: 1024px)" href="tabView.css" />
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="mobileView.css" />
+  <title>Demo page</title>
+</head>
+
+<body>
+  <!-- Navigaton Bar -->
+  <nav class="nav-bar">
+    <div class="upper-nav">
+      <div class="web-config">
+        <div class="lang">
+          <span>English</span>
+          <img id="arrowDown" src="assets/icons/arrowDown.png" alt="arrowDown" />
         </div>
-        <div class="logo">
-          <img src="/assets/logo.png" alt="" />
-        </div>
-        <div class="nav-icon">
-          <img src="assets/icons/searchIcon.png" alt="searchIcon" />
-          <img src="assets/icons/heartIcon.png" alt="heartIcon" />
-          <img src="assets/icons/bellIcon.png" alt="bellIcon" />
-          <img src="assets/icons/profileIcon.png" alt="profileIcon" />
-        </div>
-        <div class="burgerMenu">
-          <img src="assets/icons/burgerMenu.png" width="24" alt="burgerMenu" />
+        <div class="location">
+          <img src="assets/icons/locationIcon.png" alt="locationIcon" />
+          <span> Mataró, Barcelona </span>
+          <img id="arrowDown" src="assets/icons/arrowDown.png" alt="arrowDown" />
         </div>
       </div>
-      <div class="lower-nav">
-        <a href="#">
-          Cleaning Services
-          <img
-            id="arrowDown"
-            src="assets/icons/arrowDown.png"
-            alt="arrowDown"
-          />
-        </a>
-        <a href="#">Cleaning Tips</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
+      <div class="logo">
+        <img src="/assets/logo.png" alt="" />
       </div>
-    </nav>
+      <div class="nav-icon">
+        <img src="assets/icons/searchIcon.png" alt="searchIcon" />
+        <img src="assets/icons/heartIcon.png" alt="heartIcon" />
+        <img src="assets/icons/bellIcon.png" alt="bellIcon" />
+        <img src="assets/icons/profileIcon.png" alt="profileIcon" />
+      </div>
+      <div class="burgerMenu">
+        <img src="assets/icons/burgerMenu.png" width="24" alt="burgerMenu" />
+      </div>
+    </div>
+    <div class="lower-nav">
+      <a href="#">
+        Cleaning Services
+        <img id="arrowDown" src="assets/icons/arrowDown.png" alt="arrowDown" />
+      </a>
+      <a href="#">Cleaning Tips</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </div>
+  </nav>
 
-    <!-- Main content of web page -->
+  <!-- Main content of web page -->
 
-    <header class="web-content container">
-      <div class="web-heading-left">
-        <img class="glow" src="assets/blueGlow.svg" alt="" />
-        <h1>
-          Transform Your Space with
-          <span class="blueText">Expert Cleaning Services</span>
-        </h1>
+  <header class="web-content container">
+    <div class="web-heading-left">
+      <img class="glow" src="assets/blueGlow.svg" alt="" />
+      <h1>
+        Transform Your Space with
+        <span class="blueText">Expert Cleaning Services</span>
+      </h1>
+      <p>
+        Discover expert cleaning solutions for your home. We provide
+        top-notch, reliable, and efficient services tailored to your needs.
+      </p>
+    </div>
+    <div class="web-heading-right">
+      <img class="main-img" src="assets/heroImg.svg" alt="" />
+
+      <img class="hero-img-vector dots-1" src="assets/vectors/dots-1.svg" alt="dotVector" />
+      <img class="hero-img-vector dots-2" src="assets/vectors/dots-1.svg" alt="dotVector" />
+      <img class="hero-img-vector heroImg-1" src="assets/vectors/heroImg-1.svg" alt="heroImg-1" />
+      <img class="hero-img-vector heroImg-2" src="assets/vectors/heroImg-2.svg" alt="heroImg-1" />
+    </div>
+  </header>
+
+  <!-- Working Steps Section -->
+  <section class="working-steps-section">
+    <div class="working-steps container">
+      <div class="working-steps-heading heading">
+        <!-- <img class="crossLine" src="assets/vectors/crossLine.svg" alt="crossLine"/> -->
+        <h2>How does it work?</h2>
         <p>
-          Discover expert cleaning solutions for your home. We provide
-          top-notch, reliable, and efficient services tailored to your needs.
+          Sub text content goes here in 2 or 3 lines, libero justo egestas sem
+          vitae pellentesque potenti a. Sagittis feugiat sollicitudin turpis
+          erat
         </p>
       </div>
-      <div class="web-heading-right">
-        <img class="main-img" src="assets/heroImg.svg" alt="" />
-
-        <img
-          class="hero-img-vector dots-1"
-          src="assets/vectors/dots-1.svg"
-          alt="dotVector"
-        />
-        <img
-          class="hero-img-vector dots-2"
-          src="assets/vectors/dots-1.svg"
-          alt="dotVector"
-        />
-        <img
-          class="hero-img-vector heroImg-1"
-          src="assets/vectors/heroImg-1.svg"
-          alt="heroImg-1"
-        />
-        <img
-          class="hero-img-vector heroImg-2"
-          src="assets/vectors/heroImg-2.svg"
-          alt="heroImg-1"
-        />
+      <img class="working-steps-glow-effect" src="assets/bluegGlow-2.svg" alt="blueGlow" />
+      <div class="working-steps-description">
+        <div class="row-one">
+          <div class="stepCard step-1">
+            <img src="assets/images/step-1.png" alt="stepImg" />
+            <h3>1. Select your services</h3>
+            <p>
+              Explore our comprehensive list of handyman services tailored for
+              your home, office, or restaurant. Choose the specific services
+              that match your maintenance and repair needs.
+            </p>
+            <img src="assets/vectors/line-1.svg" alt="arrows" />
+          </div>
+          <div class="stepCard step-2">
+            <img src="assets/images/step-2.png" alt="stepImg" />
+            <h3>2. One time or subscribes</h3>
+            <p>
+              Faucibus suspendisse integer sed adipiscing orci orci. Porta et
+              ut et interdum dolor sit nisl commodo. Quam ornare varius cras
+              amet risus mattis. Erat placerat massa mi a proin.
+            </p>
+            <img src="assets/vectors/line-2.svg" alt="arrows" />
+          </div>
+          <div class="stepCard step-3">
+            <img src="assets/images/step-3.png" alt="stepImg" />
+            <h3>3. Select your preferred Provider</h3>
+            <p>
+              Lobortis pellentesque euismod id in quis ut. Quis sagittis
+              semper eu facilisi senectus nulla. Fames nisl id mi aliquet
+              neque maecenas sed. Eget libero arcu mattis in in arcu erat.
+              Turpis.
+            </p>
+            <img src="assets/vectors/line-3.svg" alt="arrows" />
+          </div>
+        </div>
+        <div class="row-two">
+          <div class="stepCard step-4">
+            <img src="assets/images/step-3.png" alt="stepImg" />
+            <h3>4. Rate & Review</h3>
+            <p>
+              Sodales morbi eleifend faucibus ipsum malesuada. Vel amet enim
+              varius gravida pulvinar augue sed massa. Egestas a sed in donec.
+              Enim diam volutpat risus natoque.
+            </p>
+            <img src="assets/vectors/line-4.svg" alt="arrows" />
+          </div>
+          <div class="stepCard step-5">
+            <img src="assets/images/step-5.png" alt="stepImg" />
+            <h3>5. Receive updates</h3>
+            <p>
+              Auctor ullamcorper nisl vel consequat duis sapien. Ac nibh at
+              neque non aliquam ipsum condimentum elementum. In massa sit erat
+              iaculis ipsum. Ultrices malesuada lectus.
+            </p>
+            <img src="assets/vectors/line-5.svg" alt="arrows" />
+          </div>
+          <div class="stepCard step-6">
+            <img src="assets/images/step-6.png" alt="stepImg" />
+            <h3>6. Make payment</h3>
+            <p>
+              Pulvinar faucibus vel leo rhoncus dignissim sit sed lorem. Nec
+              pretium viverra phasellus enim dui adipiscing senectus.
+            </p>
+          </div>
+        </div>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <!-- Working Steps Section -->
-    <section class="working-steps-section">
-      <div class="working-steps container">
-        <div class="working-steps-heading">
-          <!-- <img class="crossLine" src="assets/vectors/crossLine.svg" alt="crossLine"/> -->
-          <h2>How does it work?</h2>
-          <p>
-            Sub text content goes here in 2 or 3 lines, libero justo egestas sem
-            vitae pellentesque potenti a. Sagittis feugiat sollicitudin turpis
-            erat
+  <!-- Category section -->
+  <section class="category-section">
+    <div class="category-heading heading">
+      <h2>Wide range of categories</h2>
+      <p>
+        Explore Our Extensive Cleaning Services for Every Space
+      </p>
+    </div>
+    <div class="categories container">
+      <div class="category-cards category-1">
+        <h3>Bathroom Cleaning</h3>
+      </div>
+      <div class="category-cards category-2">
+        <h3>Kitchen Cleaning</h3>
+      </div>
+      <div class="category-cards category-3">
+        <h3>Furnished Apartment</h3>
+      </div>
+      <div class="category-cards category-4">
+        <h3>Unfurnished Apartment</h3>
+      </div>
+      <div class="category-cards category-5">
+        <h3>Furnished Bungalow</h3>
+      </div>
+      <div class="category-cards category-6">
+        <h3>Unfurnished Bungalow</h3>
+      </div>
+      <div class="category-cards category-7">
+        <h3>Sofa Cleaning</h3>
+      </div>
+      <div class="category-cards category-8">
+        <h3>Carpet Cleaning</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why choose Section -->
+  <section class="why-choose-section">
+    <div class="why-choose container">
+      <div class="why-choose-heading heading">
+        <h2>Why choose <b>Gleam Your Casa</b></h2>
+        <p>
+          Sub text content goes here in 2 or 3 lines, libero justo egestas sem vitae pellentesque potenti a. Sagittis
+          feugiat sollicitudin turpis erat
+        </p>
+      </div>
+      <div class="why-choose-cards">
+        <div class="card">
+          <img src="assets/images/why-choose-1.png" alt="images">
+          <h3>Book a Clean Online = Anytime, Anywhere </h3>
+          <p>Whether you need certain rooms done or the entire house deep cleaned, The Maids has a clean to fit your
+            needs and budget. Find The Maids near you, get a free quote and book your service online 24/7. Pick your
+            package, select your day and preferred time, book your clean</p>
+        </div>
+        <div class="card">
+          <img src="assets/images/why-choose-2.png" alt="images">
+          <h3>Trained Teams = Faster Cleans</h3>
+          <p>Flexible team sizes to meet your needs. Our teams can get in and out of your home faster with a more
+            thorough clean. The only maid service backed by Mr. Clean®, our highly trained teams are bonded, insured,
+            and right around the corner.
           </p>
         </div>
-        <img
-          class="working-steps-glow-effect"
-          src="assets/bluegGlow-2.svg"
-          alt="blueGlow"
-        />
-        <div class="working-steps-description">
-          <div class="row-one">
-            <div class="stepCard step-1">
-              <img src="assets/images/step-1.png" alt="stepImg" />
-              <h3>1. Select your services</h3>
-              <p>
-                Explore our comprehensive list of handyman services tailored for
-                your home, office, or restaurant. Choose the specific services
-                that match your maintenance and repair needs.
-              </p>
-              <img src="assets/vectors/line-1.svg" alt="arrows" />
-            </div>
-            <div class="stepCard step-2">
-              <img src="assets/images/step-2.png" alt="stepImg" />
-              <h3>2. One time or subscribes</h3>
-              <p>
-                Faucibus suspendisse integer sed adipiscing orci orci. Porta et
-                ut et interdum dolor sit nisl commodo. Quam ornare varius cras
-                amet risus mattis. Erat placerat massa mi a proin.
-              </p>
-              <img src="assets/vectors/line-2.svg" alt="arrows" />
-            </div>
-            <div class="stepCard step-3">
-              <img src="assets/images/step-3.png" alt="stepImg" />
-              <h3>3. Select your preferred Provider</h3>
-              <p>
-                Lobortis pellentesque euismod id in quis ut. Quis sagittis
-                semper eu facilisi senectus nulla. Fames nisl id mi aliquet
-                neque maecenas sed. Eget libero arcu mattis in in arcu erat.
-                Turpis.
-              </p>
-              <img src="assets/vectors/line-3.svg" alt="arrows" />
+        <div class="card">
+          <img src="assets/images/why-choose-3.png" alt="images">
+          <h3>Your Custom Cleans = Affordable Routine</h3>
+          <p>Our 22-Step Cleaning Process cleans your home top to bottom and guards against germs and allergens. We
+            treat your home like it’s our own. It’s more than a job to us — it’s our calling.
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Customer rating section -->
+  <div class="customer-rating-section">
+    <div class="customer-rating container">
+      <div class="customer-rating-heading heading">
+        <h2>Over 1000+ happy customers</h2>
+        <p>
+          Sub text content goes here in 2 or 3 lines, libero justo egestas sem vitae pellentesque potenti a. Sagittis
+          feugiat sollicitudin turpis erat
+        </p>
+      </div>
+      <div class="customer-rating-display">
+        <div class="rating-cards">
+          <img src="assets/vectors/stars.svg" alt="stars">
+          <p>Really good service! Claudia is very nice and funny. A great professional as well. So happy with my room!
+          </p>
+          <h4>- Marlyn</h4>
+        </div>
+        <div class="rating-cards">
+          <img src="assets/vectors/stars.svg" alt="stars">
+          <p>Really good service! Claudia is very nice and funny. A great professional as well. So happy with my room!
+          </p>
+          <h4>- Samy</h4>
+        </div>
+        <div class="rating-cards">
+          <img src="assets/vectors/stars.svg" alt="stars">
+          <p>Really good service! Claudia is very nice and funny. A great professional as well. So happy with my room!
+          </p>
+          <h4>- Ellen</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- blog card section -->
+  <section class="blog-section">
+    <div class="blog container">
+      <div class="blog-heading heading">
+        <h2>Cleaning tips from proffesionals</h2>
+      </div>
+      <div class="blog-cards">
+        <div class="card">
+          <img src="assets/images/blog-1.png" alt="images">
+          <h3>Cleaning tips, tricks & hacks </h3>
+          <p>Professional cleaning solutions for Seattle’s rainy climate</p>
+          <p><span>12 June 2024</span> &#9679; <span>5 mins read</span></p>
+        </div>
+        <div class="card">
+          <img src="assets/images/blog-2.png" alt="images">
+          <h3>Cleaning tips, tricks & hacks</h3>
+          <p>Professional cleaning solutions for Seattle’s rainy climate</p>
+          <p><span>12 June 2024</span> &#9679; <span>5 mins read</span></p>
+        </div>
+        <div class="card">
+          <img src="assets/images/blog-3.png" alt="images">
+          <h3>Cleaning tips, tricks & hacks</h3>
+          <p>Professional cleaning solutions for Seattle’s rainy climate</p>
+          <p><span>12 June 2024</span> &#9679; <span>5 mins read</span></p>
+        </div>
+      </div>
+      <div class="more-blog-btn">
+        <button class="btn">View more Blog</button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <footer class="footer">
+    <div class="footer-content container">
+      <div class="upper-footer">
+        <h3>Gleam your casa is available in</h3>
+        <div class="list-of-city">
+          <div class="us-city">
+            <h4>United states</h4>
+            <div class="city">
+              <ul class="list-1">
+                <li>Alabama</li>
+                <li>Arizona</li>
+                <li>Arkansas</li>
+                <li>California</li>
+                <li>Colarado</li>
+                <li>Connecticut</li>
+                <li>Delaware</li>
+                <li>Florida</li>
+                <li>Georgia</li>
+              </ul>
+              <ul class="list-2">
+                <li>Hawaii</li>
+                <li>Idaho</li>
+                <li>Illinois</li>
+                <li>Indiana</li>
+                <li>Iowa</li>
+                <li>Kansas</li>
+                <li>Kentucky</li>
+                <li>Louisiana</li>
+                <li>Maryland</li>
+              </ul>
+              <ul class="list-3">
+                <li>Massachusetts</li>
+                <li>Michigan</li>
+                <li>Minnesota</li>
+                <li>Mississippi</li>
+                <li>Missouri</li>
+                <li>Nebraska</li>
+                <li>Nevada</li>
+                <li>New Hampshire</li>
+                <li>New Jersey</li>
+              </ul>
+              <ul class="list-4">
+                <li>New Mexico</li>
+                <li>New York</li>
+                <li>North Carolina</li>
+                <li>Ohio</li>
+                <li>Oklahoma</li>
+                <li>Oregon</li>
+                <li>Pennsylvania</li>
+                <li>Rhode Island</li>
+                <li>South Carolina</li>
+              </ul>
+              <ul class="list-5">
+                <li>Tennessee</li>
+                <li>Texas</li>
+                <li>Utah</li>
+                <li>Vermont</li>
+                <li>Virginia</li>
+                <li>Washington</li>
+                <li>Wisconson</li>
+              </ul>
             </div>
           </div>
-          <div class="row-two">
-            <div class="stepCard step-4">
-              <img src="assets/images/step-3.png" alt="stepImg" />
-              <h3>4. Rate & Review</h3>
-              <p>
-                Sodales morbi eleifend faucibus ipsum malesuada. Vel amet enim
-                varius gravida pulvinar augue sed massa. Egestas a sed in donec.
-                Enim diam volutpat risus natoque.
-              </p>
-              <img src="assets/vectors/line-4.svg" alt="arrows" />
+          <div class="canada-city">
+            <h4>Canada</h4>
+            <div class="city">
+              <ul>
+                <li>British Columbia</li>
+                <li>Ontario</li>
+              </ul>
             </div>
-            <div class="stepCard step-5">
-              <img src="assets/images/step-5.png" alt="stepImg" />
-              <h3>5. Receive updates</h3>
-              <p>
-                Auctor ullamcorper nisl vel consequat duis sapien. Ac nibh at
-                neque non aliquam ipsum condimentum elementum. In massa sit erat
-                iaculis ipsum. Ultrices malesuada lectus.
-              </p>
-              <img src="assets/vectors/line-5.svg" alt="arrows" />
-            </div>
-            <div class="stepCard step-6">
-              <img src="assets/images/step-6.png" alt="stepImg" />
-              <h3>6. Make payment</h3>
-              <p>
-                Pulvinar faucibus vel leo rhoncus dignissim sit sed lorem. Nec
-                pretium viverra phasellus enim dui adipiscing senectus.
-              </p>
-            </div>
+          </div>
+          <div class="load-more-btn">
+            <P>Load More</P>
           </div>
         </div>
       </div>
-    </section>
+      <div class="lower-footer">
+        <div class="footer-links">
+          <div class="links">
+            <div class="about-us">
+              <h4>About US</h4>
+              <ul>
+                <li>Who are we</li>
+                <li>Blogs</li>
+              </ul>
+            </div>
+            <div class="need-help">
+              <h4>Need help?</h4>
+              <ul>
+                <li>Contact Us</li>
+                <li>Privacy Policy</li>
+                <li>Refund Policy</li>
+                <li>Terms of service</li>
+                <li>FQAs</li>
+              </ul>
+            </div>
+          </div>
+          <div class="payment">
 
-    <!-- Category section -->
-     <section class="category-section">
-        <div class="category-heading">
-            <h2>Wide range of categories</h2>
-            <p>
-                Explore Our Extensive Cleaning Services for Every Space
-            </p>
+          </div>
         </div>
-        <div class="categories container">
-            <div class="category-cards category-1">
-                <h3>Bathroom Cleaning</h3>
-            </div>
-            <div class="category-cards category-2">
-                <h3>Kitchen Cleaning</h3>
-            </div>
-            <div class="category-cards category-3">
-                <h3>Furnished Apartment</h3>
-            </div>
-            <div class="category-cards category-4">
-                <h3>Unfurnished Apartment</h3>
-            </div>
-            <div class="category-cards category-5">
-                <h3>Furnished Bungalow</h3>
-            </div>
-            <div class="category-cards category-6">
-                <h3>Unfurnished Bungalow</h3>
-            </div>
-            <div class="category-cards category-7">
-                <h3>Sofa Cleaning</h3>
-            </div>
-            <div class="category-cards category-8">
-                <h3>Carpet Cleaning</h3>
-            </div>
-        </div>
-     </section>
+        <div class="sing-up-bar"></div>
+      </div>
+    </div>
+  </footer>
+</body>
 
-     <!-- Why choose Section -->
-      <section class="why-choose-section">
-        <div class="why-choose container">
-          <div class="why-choose-heading">
-            <h2>Why choose <b>Gleam Your Casa</b></h2>
-            <p>
-              Sub text content goes here in 2 or 3 lines, libero justo egestas sem vitae pellentesque potenti a. Sagittis feugiat sollicitudin turpis erat
-            </p>
-          </div>
-          <div class="why-choose-cards">
-            <div class="why-choose-card">
-              <img src="assets/images/why-choose-1.png" alt="images">
-              <h3>Book a Clean Online = Anytime, Anywhere </h3>
-              <p>Whether you need certain rooms done or the entire house deep cleaned, The Maids has a clean to fit your needs and budget. Find The Maids near you, get a free quote and book your service online 24/7. Pick your package, select your day and preferred time, book your clean</p>
-            </div>
-            <div class="why-choose-card">
-              <img src="assets/images/why-choose-2.png" alt="images">
-              <h3>Trained Teams = Faster Cleans</h3>
-              <p>Flexible team sizes to meet your needs. Our teams can get in and out of your home faster with a more thorough clean. The only maid service backed by Mr. Clean®, our highly trained teams are bonded, insured, and right around the corner.
-              </p>
-            </div>
-            <div class="why-choose-card">
-              <img src="assets/images/why-choose-3.png" alt="images">
-              <h3>Your Custom Cleans = Affordable Routine</h3>
-              <p>Our 22-Step Cleaning Process cleans your home top to bottom and guards against germs and allergens. We treat your home like it’s our own. It’s more than a job to us — it’s our calling.
-              </p>
-            </div>
-          </div>
-        </div>
-        </div>
-      </section>
-
-      <!-- Customer rating section -->
-       <div class="customer-rating-section">
-        <div class="customer-rating container">
-          <div class="customer-rating-heading">
-            <h2>Over 1000+ happy customers</h2>
-            <p>
-              Sub text content goes here in 2 or 3 lines, libero justo egestas sem vitae pellentesque potenti a. Sagittis feugiat sollicitudin turpis erat
-            </p>
-          </div>
-          <div class="customer-rating-display">
-            <div class="rating-cards">
-              <img src="assets/vectors/stars.svg" alt="stars">
-              <p>Really good service! Claudia is very nice and funny. A great professional as well. So happy with my room!</p>
-              <h4>- Marlyn</h4>
-            </div>
-            <div class="rating-cards">
-              <img src="assets/vectors/stars.svg" alt="stars">
-              <p>Really good service! Claudia is very nice and funny. A great professional as well. So happy with my room!</p>
-              <h4>- Samy</h4>
-            </div>
-            <div class="rating-cards">
-              <img src="assets/vectors/stars.svg" alt="stars">
-              <p>Really good service! Claudia is very nice and funny. A great professional as well. So happy with my room!</p>
-              <h4>- Ellen</h4>
-            </div>
-          </div>
-        </div>
-       </div>
-
-       <!-- blog card section -->
-       <section class="blog-section">
-        <div class="blog container">
-          <div class="blog-heading">
-            <h2>Cleaning tips from proffesionals</h2>
-          </div>
-          <div class="blog-cards">
-            <div class="blog-card">
-              <img src="assets/images/blog-1.png" alt="images">
-              <h3>Cleaning tips, tricks & hacks </h3>
-              <p>Professional cleaning solutions for Seattle’s rainy climate</p>
-              <p><span>12 June 2024</span> &#9679; <span>5 mins read</span></p>
-            </div>
-            <div class="blog-card">
-              <img src="assets/images/blog-2.png" alt="images">
-              <h3>Cleaning tips, tricks & hacks</h3>
-              <p>Professional cleaning solutions for Seattle’s rainy climate</p>
-              <p><span>12 June 2024</span> &#9679; <span>5 mins read</span></p>
-            </div>
-            <div class="blog-card">
-              <img src="assets/images/blog-3.png" alt="images">
-              <h3>Cleaning tips, tricks & hacks</h3>
-              <p>Professional cleaning solutions for Seattle’s rainy climate</p>
-              <p><span>12 June 2024</span> &#9679; <span>5 mins read</span></p>
-            </div>
-          </div>
-          <div class="more-blog-btn">
-            <button class="btn">View more Blog</button>
-          </div>
-        </div>
-        </div>
-      </section>
-
-  </body>
 </html>
