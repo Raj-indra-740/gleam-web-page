@@ -47,3 +47,8 @@
   .stepCard:nth-child(odd) {
     margin-top: 100px;
   }
+
+
+  .customer-rating{
+    padding: 80px 5px 0;
+  }

@@ -163,10 +163,29 @@
     padding-top: 40px;
     margin-bottom: 14px;
   }
-.why-choose-cards{
+.why-choose-cards, .blog-cards{
     /* flex-direction: column; */
     padding: 10px 10px 40px;
 }
-.why-choose-card{
+.why-choose-card, .blog-section{
     margin-bottom: 10px;
+}
+
+/* Customer rating section */
+.customer-rating-section{
+    display: none;
+}
+
+/* Blog section */
+
+.blog-section{
+    margin-top: 40px;
+    padding-bottom: 10px;
+}
+.blog-heading{
+    padding-top: 10px;
+    margin-bottom: 32px ;
+}
+.blog-heading h2{
+    min-width: 350px;
 }
