@@ -2,7 +2,7 @@
   --decription-font-size: 16px;
   --heading-font-size: 32px;
 }
-.working-steps-seaction {
+.working-steps-section {
   display: block;
 }
 /* Navigaton Bar */
@@ -99,7 +99,7 @@
   top: 10px;
 }
 
-/* Working Steps Seaction */
+/* Working Steps section */
 .working-steps {
   position: relative;
   padding: 10px;
@@ -140,7 +140,7 @@
   padding-top: 72px;
 }
 
-/* Category seaction */
+/* Category section */
 .categories {
 
   padding: 0 0 40px;
