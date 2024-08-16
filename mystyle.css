@@ -257,6 +257,7 @@ body {
 
 .working-steps-description {
   width: 100%;
+  padding: 50px; 
 }
 
 .row-one,
@@ -621,7 +622,7 @@ ul {
   margin: 0 0 16px;
 }
 
-.sing-up-bar h4 {
+.sign-up-bar h4 {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 20px;
@@ -631,11 +632,14 @@ ul {
   width: 65%;
   max-width: 470px;
   padding: 15px 20px;
-  border: none;
+  background-color: transparent;
+  border: 1px solid #ffffff;
   border-radius: 7px;
 }
-
-.sing-up-btn {
+.input-section input::placeholder{
+  color: #ffffff;
+}
+.sign-up-btn {
   width: 32%;
   max-width: 195px;
 }
@@ -1134,8 +1138,8 @@ ul {
     margin-bottom: 20px;
   }
 
-  .sing-up-btn,
-  .sing-up-bar input {
+  .sign-up-btn,
+  .sign-up-bar input {
     padding: 10px 20px;
   }
 
