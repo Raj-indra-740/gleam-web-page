@@ -225,3 +225,60 @@ li{
 .load-more-btn{
     display: block;
 }
+
+
+.lower-footer{
+  padding: 39px 16px 20px;
+}
+.footer-links{
+  flex-direction: column;
+}
+.footer-links .links-section{
+  width: 100%;
+  margin-bottom: 20px;
+}
+.sing-up-btn, .sing-up-bar input{
+  padding: 10px 20px;
+}
+.links{
+  flex-direction: column;
+  margin: 0;
+}
+.links ul{
+  display: none;
+}
+.payment{
+  align-items: flex-start;
+  margin: 0 0 35px;
+}
+.social-media-links img{
+  margin-left: 0;
+  margin-right: 15px;
+}
+.payment-gateways img{
+  margin-left:0;
+}
+.payment-gateways img:not(:last-child){
+  margin-right:5px;
+}
+.payment-section p{
+  text-align: start;
+}
+.payment-gateways {
+  margin: 0 0 28px;
+}
+.hrLine{
+  width: 100%;
+  max-width: 343px;
+  display: block;
+  margin: 0 auto 30px;
+}
+.hrLine img{
+  width: 100%;
+}
+.contact-us, .contact-numbe {
+  padding: 10px 20px;
+}
+.payment-section .copyright{
+  text-align: center;
+}

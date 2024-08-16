@@ -455,6 +455,7 @@ body {
   /* background-color: #79ae4860; */
 }
 .upper-footer{
+  margin: 0 auto;
   padding: 50px 50px;
 }
 .upper-footer h3{
@@ -500,7 +501,115 @@ ul{
 .lower-footer{
   background-color: var(--decription-font-color);
 }
-
-.footer-links .links{
+.lower-footer-content{
+  margin: 0 auto;
+  padding: 50px 50px;     
+}
+.footer-links{
   display: flex;
+  justify-content: space-between;
+}
+.footer-links .links-section{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+}
+.links{
+  width: 100%;
+  max-width:400px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 60px;   
+}
+.links h4{
+  margin: 0 0 24px ;
+}
+.links ul li{
+  margin: 0 0 16px;
+} 
+.sing-up-bar h4{
+  font-size: 20px;
+  font-weight: 700;
+  margin:  0 0 20px;
+}
+.input-section input{
+  width: 65%;
+  max-width: 470px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 7px;
+}
+.sing-up-btn{
+  width: 32%;
+  max-width: 195px;
+}
+
+.payment-section p{
+  text-align: end;
+  font-size: 16px;
+  font-weight: 600 ;
+}
+
+.payment{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin: 0 0 147px;
+}
+
+.social-media-links img{
+  width: 18px;
+  margin-left: 15px;
+}
+.social-media-links{
+  margin: 0 0 30px;
+}
+
+.payment-gateways img{
+  width: 56px;
+  margin-left:7px;
+}
+.payment-gateways{
+  margin: 0 0 48px;
+}
+
+.payment h5{
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.payment p{
+  color: #D4D8EB;
+  font-size: 18px;
+  font-weight: 450;
+  margin: 0 0 30px;
+}
+.hrLine{
+  display: none;
+}
+.contact-btns{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.contact-us{
+   width: 47%;
+}
+.contact-number{
+  width: 47%;
+  color: white;
+  background-color: transparent;
+  padding: 10px ;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 7px;
+}
+
+.contact-number img{
+  width: 15px;
+  vertical-align: middle;
+}
+.contact-number span{
+  vertical-align: middle;
 }
