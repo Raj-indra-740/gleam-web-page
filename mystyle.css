@@ -6,8 +6,8 @@
 
 :root {
   --heading-font-color: #373a36;
-  --decription-font-color: #0071b4;
-  --decription-font-size: 16px;
+  --description-font-color: #0071b4;
+  --description-font-size: 16px;
   --heading-font-size: 56px;
 }
 
@@ -29,12 +29,15 @@ body {
   text-decoration: none;
   border: none;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 /* Card CSS */
 .card {
   width: 100%;
   max-width: 357px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card img {
@@ -43,9 +46,11 @@ body {
 }
 
 .card h3 {
+  width: 70%;
   font-size: 24px;
-  color: var(--decription-font-color);
+  color: var(--description-font-color);
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .card p {
@@ -54,7 +59,7 @@ body {
   line-height: 24px;
 }
 
-/* Navigaton Bar */
+/* Navigation Bar */
 .nav-bar {
   width: 100%;
   margin: auto;
@@ -74,6 +79,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.lang, .location{
+  cursor: pointer;
 }
 
 .web-config div {
@@ -123,6 +131,7 @@ body {
 
 .burgerMenu {
   margin-right: 20px;
+  cursor: pointer;
   display: none;
 }
 
@@ -155,6 +164,7 @@ body {
   position: absolute;
   left: 0px;
   top: -10px;
+  z-index: -1;
 }
 
 .web-heading-left h1 {
@@ -354,7 +364,7 @@ body {
 
 .stepCard p {
   color: var(--heading-font-color);
-  font-size: var(--decription-font-size);
+  font-size: var(--description-font-size);
   line-height: 20px;
 }
 
@@ -381,6 +391,7 @@ body {
   border-radius: 20px;
   color: white;
   box-shadow: inset 0 0 0 2000px #1d1d1d79;
+  cursor: pointer;
 }
 
 .category-cards h3 {
@@ -453,11 +464,12 @@ body {
   font-size: var(--heading-font-size);
   font-weight: 100;
   line-height: 47px;
+
 }
 
 .heading p {
   padding: 16px 10px;
-  font-size: var(--decription-font-size);
+  font-size: var(--description-font-size);
   font-weight: 450;
   line-height: 25px;
 }
@@ -528,7 +540,9 @@ body {
   background: rgba(85, 88, 90, 1) url("assets/vectors/footerBg.svg") no-repeat;
   background-size: cover
 }
-
+.footer li{
+  cursor: pointer;
+}
 .footer-content {
   margin: 0 auto;
 }
@@ -583,10 +597,11 @@ ul {
   text-align: center;
   border: 1px solid white;
   border-radius: 30px;
+  cursor: pointer;
 }
 
 .lower-footer {
-  background-color: var(--decription-font-color);
+  background-color: var(--description-font-color);
 }
 
 .lower-footer-content {
@@ -660,6 +675,7 @@ ul {
 .social-media-links img {
   width: 18px;
   margin-left: 15px;
+  cursor: pointer;
 }
 
 .social-media-links {
@@ -669,6 +685,7 @@ ul {
 .payment-gateways img {
   width: 56px;
   margin-left: 7px;
+  cursor: pointer;
 }
 
 .payment-gateways {
@@ -710,11 +727,13 @@ ul {
   text-align: center;
   border: 1px solid white;
   border-radius: 7px;
+  cursor: pointer;
 }
 
 .contact-number img {
   width: 15px;
   vertical-align: middle;
+
 }
 
 .contact-number span {
@@ -866,7 +885,7 @@ ul {
 
 @media screen and (max-width: 600px) {
   :root {
-    --decription-font-size: 16px;
+    --description-font-size: 16px;
     --heading-font-size: 32px;
   }
 
