@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -9,13 +11,43 @@
   --description-font-color: #0071b4;
   --description-font-size: 16px;
   --heading-font-size: 56px;
+  --padding-of-sections-tb: 80px;
+  --padding-of-sections-lr: 120px;
+}
+
+@font-face {
+  font-family: 'Circular Std Book';
+  src: url('fonts/circular-std/CircularStd-Book.eot');
+  src: local('Circular Std Book'), local('CircularStd-Book'),
+      url('fonts/circular-std/CircularStd-Book.eot?#iefix') format('embedded-opentype'),
+      url('fonts/circular-std/CircularStd-Book.woff2') format('woff2'),
+      url('fonts/circular-std/CircularStd-Book.woff') format('woff'),
+      url('fonts/circular-std/CircularStd-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adobe Caslon Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Adobe Caslon Pro Regular'), url('fonts/Adobe-Caslon-Pro/ACaslonPro-Regular.woff') format('woff');
+}
+
+body{
+  font-family: 'Circular Std Book';
 }
 
 a {
   text-decoration: none;
   color: black;
 }
-
+input:focus{
+  outline: none;
+}
+li:hover, .payment-section img:hover, .contact-number span:hover{
+  transform: scale(1.1);
+}
 body {
   height: 100vh;
   position: relative;
@@ -32,6 +64,10 @@ body {
   cursor: pointer;
 }
 
+.btn:hover , .btn:active{
+  background-color: #5d8636;
+}
+
 /* Card CSS */
 .card {
   width: 100%;
@@ -44,7 +80,6 @@ body {
   width: 100%;
   margin-bottom: 16px;
 }
-
 .card h3 {
   width: 70%;
   font-size: 24px;
@@ -90,7 +125,9 @@ body {
   justify-content: start;
   align-items: center;
 }
-
+.web-config span:hover{
+  font-weight: 500;
+}
 .location img {
   width: 21px;
 }
@@ -128,7 +165,13 @@ body {
   font-weight: 450;
   color: var(--heading-font-color);
 }
-
+ a:hover  {
+  font-weight: 800;
+}
+#arrowDown:hover{
+  color: #D4D8EB;
+  transform: rotate(180deg);
+}
 .burgerMenu {
   margin-right: 20px;
   cursor: pointer;
@@ -143,6 +186,8 @@ body {
 .container {
   width: 100%;
   max-width: 1440px;
+  /* border-left:1px solid black ;
+  border-right:1px solid black ; */
 }
 
 .web-content {
@@ -169,6 +214,7 @@ body {
 
 .web-heading-left h1 {
   color: var(--heading-font-color);
+  font-family:'Playfair Display';
   font-size: 65px;
   font-weight: 400;
   line-height: 80px;
@@ -181,7 +227,8 @@ body {
 
 .web-heading-left p {
   color: #3d5368;
-  font-size: 24px;
+  font-family: 'Adobe Caslon Pro Regular';
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 33px;
   padding-right: 10px;
@@ -230,6 +277,7 @@ body {
 
 /* Working Steps section  */
 .working-steps-section {
+  padding: var(--padding-of-sections-lr) var(--padding-of-sections-tb);
   width: 100%;
   background-color: #f0f7fb;
 }
@@ -647,6 +695,7 @@ ul {
   width: 65%;
   max-width: 470px;
   padding: 15px 20px;
+  color: #ffffff;
   background-color: transparent;
   border: 1px solid #ffffff;
   border-radius: 7px;
@@ -749,9 +798,9 @@ ul {
     padding: 0 50px 100px;
   }
 
-  .web-heading-left h1 {
+  /* .web-heading-left h1 {
     font-size: 52px;
-  }
+  } */
 
   .step-1 img[alt="arrows"] {
     right: -245px;
@@ -801,14 +850,14 @@ ul {
   }
 }
 
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 1080px) {
   .web-config {
     display: none;
   }
 
   .web-heading-left h1 {
     max-width: 520px;
-    font-size: 42px;
+    font-size: 3rem;
     line-height: 52px;
   }
 
