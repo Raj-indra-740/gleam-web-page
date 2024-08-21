@@ -172,9 +172,8 @@
   
     /* Category section */
     .categories {
-  
       padding: 0 0 40px;
-      gap: 10px;
+      gap: 8px;
     }
   
     .category-heading {
