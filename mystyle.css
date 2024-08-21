@@ -26,12 +26,20 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
   font-family: 'Adobe Caslon Pro Regular';
   font-style: normal;
   font-weight: normal;
   src: local('Adobe Caslon Pro Regular'), url('fonts/Adobe-Caslon-Pro/ACaslonPro-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'OPTIBakerDanmarkOne';
+  src:url('fonts/OPTI-baker-danmark/OPTIBakerDanmarkOne.ttf.woff') format('woff'),
+      url('fonts/OPTI-baker-danmark/OPTIBakerDanmarkOne.ttf.svg#OPTIBakerDanmarkOne') format('svg'),
+      url('fonts/OPTI-baker-danmark/OPTIBakerDanmarkOne.ttf.eot'),
+      url('fonts/OPTI-baker-danmark/OPTIBakerDanmarkOne.ttf.eot?#iefix') format('embedded-opentype'); 
+      font-weight: normal;
+      font-style: normal;
 }
 
 body{
@@ -53,6 +61,9 @@ body {
   position: relative;
 }
 
+.working-steps, .category, .why-choose, .customer-rating, .blog{
+  padding: var(--padding-of-sections-tb) var(--padding-of-sections-lr)
+}
 /* Button CSS */
 .btn {
   padding: 15px 45px;
@@ -150,7 +161,7 @@ body {
 
 .lower-nav {
   width: 100%;
-  max-width: 516px;
+  max-width: 536px;
   margin: 5px auto 30px;
   padding: 0 10px;
   text-align: center;
@@ -161,7 +172,7 @@ body {
 }
 
 .lower-nav a {
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: 450;
   color: var(--heading-font-color);
 }
@@ -192,7 +203,7 @@ body {
 
 .web-content {
   margin: 0 auto;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -204,14 +215,23 @@ body {
   max-width: 527px;
 }
 
-.web-heading-left .glow {
+/* .web-content .glow {
   width: 500px;
   position: absolute;
   left: 0px;
   top: -10px;
   z-index: -1;
+} */
+.glow {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  left: -171.5px;
+  top: calc(50% - 420px/2 - 128px);
+  background: #62C5FF;
+  opacity: 0.5;
+  filter: blur(177.59px);
 }
-
 .web-heading-left h1 {
   color: var(--heading-font-color);
   font-family:'Playfair Display';
@@ -277,17 +297,24 @@ body {
 
 /* Working Steps section  */
 .working-steps-section {
-  padding: var(--padding-of-sections-lr) var(--padding-of-sections-tb);
+ /* padding: var(--padding-of-sections-tb)  var(--padding-of-sections-lr); */
   width: 100%;
   background-color: #f0f7fb;
 }
 
-.crossLine {
+.crossLine{
+  /* Rectangle 42414 */
+  /* position: relative; */
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(180deg, rgba(240, 247, 251, 0) 0%, #F0F7FB 100%);
+}
+.working-steps-heading img {
   position: absolute;
-  left: 323px;
-  top: 625px;
-  width: 260px;
-  height: 330px;
+  right: 81%;
+  bottom: 6.25rem;
+  width: 15vw;
+  /* min-height: 358px; */
 }
 
 .working-steps {
@@ -310,12 +337,12 @@ body {
 
 .working-steps-heading {
   position: relative;
-  padding-top: 50px;
+  /* padding-top: 50px; */
 }
 
 .working-steps-description {
   width: 100%;
-  padding: 50px; 
+  /* padding: 50px;  */
 }
 
 .row-one,
@@ -417,14 +444,18 @@ body {
 }
 
 /* category section */
-.category-heading {
-  padding-top: 80px;
-}
 
+/* .category-heading {
+  padding-top: 80px;
+} */
+/* .category-section{
+  padding: var(--padding-of-sections-lr) var(--padding-of-sections-tb)
+} */
 .categories {
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
   margin: 0 auto;
   display: flex;
+  /* flex-direction: column; */
   justify-content: center;
   flex-wrap: wrap;
   gap: 32px;
@@ -491,9 +522,9 @@ body {
 
 /* why choose section */
 .why-choose-section {
+ /* padding: var(--padding-of-sections-tb)  var(--padding-of-sections-lr); */
   width: 100%;
   background-color: #f0f7fb;
-  padding-bottom: 80px;
 }
 
 .why-choose,
@@ -504,11 +535,11 @@ body {
 .why-choose-heading,
 .blog-heading {
   max-width: 750px;
-  padding-top: 80px;
 }
 
 .heading h2 {
   color: var(--heading-font-color);
+  font-family: 'OPTIBakerDanmarkOne';
   font-size: var(--heading-font-size);
   font-weight: 100;
   line-height: 47px;
@@ -533,13 +564,14 @@ body {
 
 /* customer rating section */
 .customer-rating-section {
+ /* padding: var(--padding-of-sections-tb)  var(--padding-of-sections-lr); */
   width: 100%;
   padding-bottom: 80px;
 }
 
 .customer-rating {
   margin: auto;
-  padding: 80px 5px 0;
+  /* padding: 80px 5px 0; */
 }
 
 .customer-rating-display {
@@ -569,7 +601,7 @@ body {
 .blog-section {
   width: 100%;
   background-color: #f0f7fb;
-  padding-bottom: 80px;
+ /* padding: var(--padding-of-sections-tb)  var(--padding-of-sections-lr); */
 }
 
 .blog-card {
@@ -795,7 +827,7 @@ ul {
   }
 
   .web-content {
-    padding: 0 50px 100px;
+    padding: 0 50px 10px;
   }
 
   /* .web-heading-left h1 {
@@ -854,7 +886,9 @@ ul {
   .web-config {
     display: none;
   }
-
+  /* .web-heading-left {
+    max-width: 527px;
+  } */
   .web-heading-left h1 {
     max-width: 520px;
     font-size: 3rem;
@@ -903,7 +937,9 @@ ul {
     right: -30px;
     top: 10px;
   }
-
+  /* .crossLine {
+    display: none;
+  } */
   .stepCard {
     margin: 0;
     width: 30%;
@@ -931,11 +967,29 @@ ul {
     display: none;
   }
 }
-
+@media screen and (max-width: 768px) {
+  :root {
+    --description-font-size: 16x;
+    --heading-font-size:42px;
+    --padding-of-sections-tb: 60px;
+    --padding-of-sections-lr: 24px;
+  }
+  
+  .working-steps-heading img{
+    display: none;
+  }
+}
 @media screen and (max-width: 600px) {
+
   :root {
     --description-font-size: 16px;
     --heading-font-size: 32px;
+    --padding-of-sections-tb: 40px;
+    --padding-of-sections-lr: 16px;
+  }
+
+  .working-steps-heading img{
+    display: none;
   }
 
   .working-steps-section {
@@ -943,9 +997,9 @@ ul {
   }
 
   /* Navigaton Bar */
-  .container {
+  /* .container {
     padding: 0 5px;
-  }
+  } */
 
   .nav-bar {
     position: fixed;
@@ -975,15 +1029,13 @@ ul {
   /* Main content of web page */
   .web-content {
     margin-top: 60px;
-    padding-bottom: 47px;
+    /* padding-bottom: 47px; */
     flex-direction: column;
     gap: 30px;
     justify-content: center;
   }
 
-  .crossLine {
-    display: none;
-  }
+
 
   .web-heading-left {
     width: 100%;
@@ -1070,6 +1122,9 @@ ul {
     line-height: 20px;
   }
 
+  .working-steps-description{
+    padding: initial;
+  }
   .row-one,
   .row-two {
     flex-direction: column;
