@@ -61,7 +61,7 @@ body {
   position: relative;
 }
 
-.working-steps, .category, .why-choose, .customer-rating, .blog{
+.working-steps, .category, .why-choose, .customer-rating, .blog, .upper-footer{
   padding: var(--padding-of-sections-tb) var(--padding-of-sections-lr)
 }
 /* Button CSS */
@@ -87,9 +87,19 @@ body {
   flex-direction: column;
 }
 
-.card img {
+.card-img {
   width: 100%;
   margin-bottom: 16px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-img img{
+  width: 100%;
+  transition: transform .5s ease-in;
+}
+.card-img img:hover{
+  transform: scale(1.1);
 }
 .card h3 {
   width: 70%;
@@ -475,6 +485,7 @@ body {
   color: white;
   box-shadow: inset 0 0 0 2000px #1d1d1d79;
   cursor: pointer;
+  transition: transform .5s ease-in;
 }
 
 .category-cards h3 {
@@ -485,43 +496,46 @@ body {
 }
 
 .category-1 {
-  background: url("assets/images/category-1.png");
+  background: url("assets/images/category-1.webp");
   background-size: cover;
 }
 
 .category-2 {
-  background: url("assets/images/category-2.png");
+  background: url("assets/images/category-2.webp");
   background-size: cover;
 }
 
 .category-3 {
-  background: url("assets/images/category-3.png");
+  background: url("assets/images/category-3.webp");
   background-size: cover;
 }
 
 .category-4 {
-  background: url("assets/images/category-4.png");
+  background: url("assets/images/category-4.webp");
   background-size: cover;
 }
 
 .category-5 {
-  background: url("assets/images/category-5.png");
+  background: url("assets/images/category-5.webp");
   background-size: cover;
 }
 
 .category-6 {
-  background: url("assets/images/category-6.png");
+  background: url("assets/images/category-6.webp");
   background-size: cover;
 }
 
 .category-7 {
-  background: url("assets/images/category-7.png");
+  background: url("assets/images/category-7.webp");
   background-size: cover;
 }
 
 .category-8 {
-  background: url("assets/images/category-8.png");
+  background: url("assets/images/category-8.webp");
   background-size: cover;
+}
+.category-cards:hover{
+  transform: scale(1.05);
 }
 
 /* why choose section */
@@ -633,7 +647,7 @@ body {
 
 .upper-footer {
   margin: 0 auto;
-  padding: 50px 50px;
+  /* padding: 50px 50px; */
 }
 
 .upper-footer h3 {
@@ -883,5 +897,12 @@ ul {
 
   .customer-rating {
     padding: 80px 5px 0;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .working-steps-heading img{
+    width: 260px;
+    /* height: ; */
   }
 }
